@@ -1,0 +1,109 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "http://jsonschema.net",
+    "globals": {
+        "selectLangLabel": {
+            "type": "string",
+            "required": true,
+            "default": "Select language",
+            "inputType": "Text",
+            "validators": [],
+            "translatable": true
+        },
+        "setCurrentTimeLabel": {
+            "type": "string",
+            "required": true,
+            "default": "Set current time",
+            "inputType": "Text",
+            "validators": [],
+            "translatable": true
+        }
+    },
+    "properties": {
+        "pluginLocations": {
+            "type": "object",
+            "properties": {
+                "course": {
+                    "type": "object",
+                    "properties": {
+                        "_mediaSync": {
+                            "type": "object",
+                            "legend": "Media Sync",
+                            "properties": {
+                                "_isEnabled": {
+                                    "type": "boolean",
+                                    "required": true,
+                                    "default": true,
+                                    "title": "Is Enabled",
+                                    "inputType": "Checkbox",
+                                    "validators": [],
+                                    "help": ""
+                                },
+                                "_items": {
+                                    "type": "array",
+                                    "required": true,
+                                    "title": "Items",
+                                    "items": {
+                                        "type": "object",
+                                        "required": true,
+                                        "properties": {
+                                            "_mediaId": {
+                                                "type": "string",
+                                                "required": true,
+                                                "title": "Media ID",
+                                                "inputType": "Text",
+                                                "validators": [],
+                                                "help": ""
+                                            },
+                                            "_chapters": {
+                                                "type": "array",
+                                                "required": true,
+                                                "title": "Chapters",
+                                                "items": {
+                                                    "type": "object",
+                                                    "required": true,
+                                                    "properties": {
+                                                        "srclang": {
+                                                            "type": "string",
+                                                            "required": false,
+                                                            "default": "",
+                                                            "title": "Language Code",
+                                                            "inputType": "Text",
+                                                            "validators": [
+                                                                "required"
+                                                            ]
+                                                        },
+                                                        "src": {
+                                                            "type": "string",
+                                                            "required": false,
+                                                            "default": "",
+                                                            "title": "Caption File",
+                                                            "inputType": "Asset:other",
+                                                            "validators": [
+                                                                "required"
+                                                            ]
+                                                        },
+                                                        "label": {
+                                                            "type": "string",
+                                                            "required": false,
+                                                            "title": "Label",
+                                                            "default": "",
+                                                            "inputType": "Text",
+                                                            "validators": [],
+                                                            "help": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

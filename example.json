@@ -1,0 +1,68 @@
+{
+  "_mediaSync": {
+    "_isEnabled": true,
+    "_items": [
+      {
+        "_mediaId": "c-135",
+        "_syncPoints": [
+          {
+            "text": "Responsive design means you can create a course once",
+            "startTime": 1.101,
+            "endTime": 3.684,
+            "isCuepoint": true,
+            "cuepointLabel": "Responsive design"
+          },
+          {
+            "text": "but view it on a wide range of browsers, devices or operating systems.",
+            "startTime": 3.709,
+            "endTime": 7.024,
+            "isCuepoint": true,
+            "cuepointLabel": "Multidevice support"
+          },
+          {
+            "text": "This is achieved by using fluid layouts",
+            "startTime": 7.1,
+            "endTime": 8.838,
+            "isCuepoint": true,
+            "cuepointLabel": "Go to fluid layouts"
+          },
+          {
+            "text": "to ensure the presentation of content",
+            "startTime": 8.863,
+            "endTime": 11.166,
+            "isCuepoint": false,
+            "cuepointLabel": ""
+          },
+          {
+            "text": "is tailored to suit the size of the screen.",
+            "startTime": 11.193,
+            "endTime": 13.371,
+            "isCuepoint": true,
+            "cuepointLabel": "Go to suit the size of the screen"
+          },
+          {
+            "text": "This means you can start a course on your laptop",
+            "startTime": 14.18,
+            "endTime": 16.314,
+            "isCuepoint": false,
+            "cuepointLabel": ""
+          },
+          {
+            "text": "and finish it later on your mobile or tablet.",
+            "startTime": 16.339,
+            "endTime": 20,
+            "isCuepoint": false,
+            "cuepointLabel": ""
+          },
+          {
+            "text": "We call it Adapt",
+            "startTime": 20.21,
+            "endTime": 25,
+            "isCuepoint": true,
+            "cuepointLabel": "Go to we call it Adapt"
+          }
+        ]
+      }
+    ]
+  }
+}

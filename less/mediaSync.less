@@ -1,0 +1,30 @@
+.media.has-media-sync {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mediasync {
+    &__chapters-controls,
+    &__transcript-controls,
+    &__chapters-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0.5rem 0;
+      gap: 1rem;
+    }
+    &__transcript-tracks {
+      p {
+        display: inline;
+        margin: 0;
+        &:not(:first-child) {
+          margin-left: 0.25rem;
+        }
+      }
+      .icon:before {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$anchor": "mediaSync-course",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "course"
+    },
+    "with": {
+      "properties": {
+        "_globals": {},
+        "_mediaSync": {
+          "type": "object",
+          "title": "Media Sync",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable Media Sync",
+              "default": true
+            },
+            "_items": {
+              "type": "array",
+              "title": "Media Sync Items",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "_mediaId": {
+                    "type": "string",
+                    "title": "Media ID",
+                    "default": ""
+                  },
+                  "_syncPoints": {
+                    "type": "array",
+                    "title": "Chapters",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "srclang": {
+                          "type": "string",
+                          "title": "Language code",
+                          "default": ""
+                        },
+                        "src": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "WebVTT source",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "other"
+                          }
+                        },
+                        "label": {
+                          "type": "string",
+                          "title": "Label",
+                          "default": ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "adapt-mediaSync",
+  "version": "1.0.0",
+  "framework": ">=5",
+  "homepage": "",
+  "bugs": "",
+  "extension": "mediaSync",
+  "displayName": "Media Sync",
+  "description": "Add syncronisation text to media components",
+  "main": "/js/adapt-mediaSync.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_mediaSync",
+  "private": true
+}
